@@ -1,0 +1,34 @@
+{
+  "schema": "dies-irae-dx-kr.package-build.v4-runtime-first",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "promotion_allowed": false,
+  "release_root": "Dies_irae_DX_KR_1.0.0-rc1-ui-final",
+  "release_manifest_sha256": "2C17FF3D4C934C8449B0E31A173FBFBCE12C8DAE7DA344F4BBD1D67892C20E6E",
+  "release_tree": {
+    "file_count": 26,
+    "total_size": 614977422,
+    "tree_sha256": "75B6D67B8B0DBDB51B25E643C78B1AB3A3AB843C196A81BF957CF8F6C72118C8"
+  },
+  "zip_entry_tree": {
+    "file_count": 26,
+    "total_size": 614977422,
+    "tree_sha256": "75B6D67B8B0DBDB51B25E643C78B1AB3A3AB843C196A81BF957CF8F6C72118C8"
+  },
+  "zip": {
+    "path": "Dies_irae_DX_KR_1.0.0-rc1-ui-final.zip",
+    "size": 597545906,
+    "sha256": "BC11AA84A46AE4BDF564F46F4A1CE43A6E590B2070567FAB2AA0FBE6345FE04F"
+  },
+  "archives": {
+    "data5.dat": {
+      "path": "files/data5.dat",
+      "size": 389664768,
+      "sha256": "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+    },
+    "data6.dat": {
+      "path": "files/data6.dat",
+      "size": 210499584,
+      "sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+    }
+  }
+}

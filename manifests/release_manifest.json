@@ -1,0 +1,422 @@
+{
+  "schema": "dies-irae-dx-kr.release-manifest.v5-runtime-first",
+  "version": "1.0.0-rc1-ui-final",
+  "status": "static-pass-runtime-pending",
+  "target": {
+    "title": "Dies irae DX package",
+    "editions": [
+      "Amantes amentes",
+      "Acta est Fabula"
+    ],
+    "source_locale": "en-US",
+    "target_locale": "ko-KR",
+    "audio_locale": "ja-JP"
+  },
+  "coverage": {
+    "translation_packets": "632/632",
+    "aa_owned_text_slots": "67661/67661",
+    "aef_delta_text_slots": "8452/8452",
+    "global_review_passes": 1,
+    "ui_payload_files": {
+      "common": 2879,
+      "aef": 1876
+    },
+    "movie_payload_files": {
+      "common": 47,
+      "aef": 37
+    },
+    "background_payload_files": {
+      "common": 79,
+      "aef": 44
+    }
+  },
+  "compatible_originals": {
+    "data1.dat": "2EFE8AA9FFD16E23A6B80A098946079FA6E124F16C4264657685097238D576A2",
+    "data2.dat": "D900B788306D1F7016FDAA592D3839E0E0845529435B1E8D73931E9D3F17AB39",
+    "data3.dat": "FEA45CEF0195997C6ECBEC1DE39F7567F4D95956ACA7A7D43CA7EA1D36E11E8E",
+    "data4.dat": "16A001365E7AE6D98BC30838EF3727AC4DA600AA5EC5F573C8475EF8A7D92C63",
+    "malie.exe": "0BF8A624C6A89E68217ADDB736A5E52AC3DFD544D2D215FB6814A95DDE5C7B00",
+    "malie_fabula.exe": "39ABE2643EF5C05A5637EDBB49CD1C4B7EAE4EC732D535619D16514EA9323536",
+    "malie.ini": "328FEBBD70C45864A6A7FC62E854EF85083400265ACEE1E929FC248FB098BA1C"
+  },
+  "patched_executables": {
+    "malie.exe": {
+      "patches": [
+        {
+          "offset": "0x2958A5",
+          "before": "68 CC BA 76 00",
+          "after": "68 58 38 72 00",
+          "role": "UTF-8 translation.csv provider"
+        },
+        {
+          "offset": "0x3635D8",
+          "before": "51 00 75 00 69 00 63 00 6B 00 2E 00 00 00 00 00",
+          "after": "35 D0 2E 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "role": "dynamic Quick slot label"
+        },
+        {
+          "offset": "0x3635E8",
+          "before": "20 00 41 00 75 00 74 00 6F 00 2E 00 00 00 00 00",
+          "after": "20 00 90 C7 D9 B3 2E 00 00 00 00 00 00 00 00 00",
+          "role": "dynamic Auto slot label"
+        }
+      ],
+      "sha256": "07CBB4AB77765C45344C6312A657FCD74A711B6C8F747F2295153BF621F8EE8E"
+    },
+    "malie_fabula.exe": {
+      "patches": [
+        {
+          "offset": "0x2970F5",
+          "before": "68 5C DB 76 00",
+          "after": "68 E8 58 72 00",
+          "role": "UTF-8 translation.csv provider"
+        },
+        {
+          "offset": "0x365268",
+          "before": "51 00 75 00 69 00 63 00 6B 00 2E 00 00 00 00 00",
+          "after": "35 D0 2E 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "role": "dynamic Quick slot label"
+        },
+        {
+          "offset": "0x365278",
+          "before": "20 00 41 00 75 00 74 00 6F 00 2E 00 00 00 00 00",
+          "after": "20 00 90 C7 D9 B3 2E 00 00 00 00 00 00 00 00 00",
+          "role": "dynamic Auto slot label"
+        }
+      ],
+      "sha256": "5335D430789AA0B8C84E16B30BE744F7D544D0D2F19E3D19B59A35F2F3BC365E"
+    }
+  },
+  "font_qa": {
+    "schema": "dies-irae-dx-kr.public-font-qa.v2",
+    "valid": true,
+    "source_report_sha256": "94D154DDBF9323490ACBE912972A785A522C7689ED0C03026D4DC31450EAFECC",
+    "runtime_proof_source_sha256": "D24E27C74A1224B8FFCDABF3EF2D191270CBB597EADF62E52A654E79A32E8175",
+    "malie_vfs_font_token": "AnticCezannePro",
+    "primary_staged_filename": "anticcezannepro.otf",
+    "replacement_font_sha256": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F",
+    "alias_files_byte_identical": true,
+    "full_modern_hangul": true,
+    "runtime_first_korean_dialogue": {
+      "verdict": "PASS",
+      "survived_seconds": 30.046,
+      "new_application_error": false,
+      "new_wer": false,
+      "production_root_modified": false
+    }
+  },
+  "asset_evidence": [
+    {
+      "label": "AA lower configuration runtime-first repair",
+      "qa_file": "manifests/aa_lower_config_runtime_first_manifest.json",
+      "qa_sha256": "5896FCFCE3399CA6BF163CE55FCB5D732DDFB90AD8B62C9EED8FB6B7876FE5BD",
+      "qa_status": "PASS_STATIC_RUNTIME_REQUIRED",
+      "release_candidate": false,
+      "runtime_required": true,
+      "descriptor_count": 112,
+      "source_exact_effects": 12,
+      "rgba_bases": 4,
+      "indexed_buttons": 42,
+      "indexed_selectors": 54
+    },
+    {
+      "label": "AEF lower configuration runtime-first repair",
+      "qa_file": "manifests/aef_lower_config_runtime_first_manifest.json",
+      "qa_sha256": "29CF7DFBF675235372256BB26AE5763E00770100E04BB370F75CA227996B3756",
+      "qa_status": "PASS_STATIC_RUNTIME_REQUIRED",
+      "release_candidate": false,
+      "runtime_required": true,
+      "descriptor_count": 114,
+      "source_exact_effects": 24,
+      "rgba_bases": 4,
+      "indexed_buttons": 42,
+      "indexed_selectors": 44
+    },
+    {
+      "label": "Game/Text setting state and border independent pixel QA",
+      "qa_file": "manifests/game_text_settings_independent_pixel_qa.json",
+      "qa_sha256": "27425AE5DAD431A603882E358165D0B7680CBFA177E684E25332C22C7A824602",
+      "qa_status": "PASS",
+      "release_candidate": false,
+      "runtime_required": true
+    },
+    {
+      "label": "Merged runtime-first UI release inputs",
+      "qa_file": "manifests/runtime_first_ui_integration_report.json",
+      "qa_sha256": "0EA8C6AB6A8B5AC302A996E252555DACCC2E12CCB8EF7FAF573C02CD5413BC86",
+      "qa_status": "STATIC_READY_RUNTIME_PENDING",
+      "release_candidate": false,
+      "runtime_required": true,
+      "aa": {
+        "files": 2892,
+        "bytes": 18689043,
+        "tree_sha256": "095AD4F1A45F08A47A90A8EAF3043EFA4CDA27BEE24D916F960224644FC62D4D"
+      },
+      "aef": {
+        "files": 1933,
+        "bytes": 17589006,
+        "tree_sha256": "1CBE0D0A40437B8A771A96D055D93AF16C59CC587FE443DAA37246AC91F45EBD"
+      }
+    },
+    {
+      "label": "AA/common movies",
+      "qa_file": "final_movie_qa.json",
+      "qa_sha256": "16AA11B50735CDDC7AF2E389C96015C2A63613EC619BB711E9A573B2B378F672",
+      "qa_status": "PASS",
+      "final_asset_manifest_sha256": "6446F03C37519AD848104D86C1FA6F1BE05D275288EC87E7B869AE142A780D95",
+      "release_candidate": true,
+      "payload_file_count": 47,
+      "payload_total_size": 348884039,
+      "payload_tree_sha256": "2A8E68CCAD13669B4E81FD611286A8F8C542ADC0C9404BEC3985DDA304AB00A7",
+      "package_manifest_sha256": "AC4123D55322BA825097770EA410FCBCCCD7F6E650C537A49D57A69F7A4B2143"
+    },
+    {
+      "label": "AEF movie overrides",
+      "qa_file": "final_movie_qa.json",
+      "qa_sha256": "1BB82BAA31ADA57F9F12AA6B70D00365B53255E99FD0494B6FF529E05D5EE209",
+      "qa_status": "PASS",
+      "final_asset_manifest_sha256": "A549D08E3760248C8B0B1044403E972774C34077A46A2F5A58DB692E2639914A",
+      "release_candidate": true,
+      "payload_file_count": 37,
+      "payload_total_size": 183953836,
+      "payload_tree_sha256": "B2D4152E00CFF80D72796D154EC9DD7CC93F887F609463C62A1153BDFE01F693",
+      "package_manifest_sha256": "954A4E6F7786FF9DC5DEB49EA94701D276B3886DE76B641587B5D44AC5316FA4"
+    },
+    {
+      "label": "AA/common backgrounds",
+      "qa_file": "background_asset_qa.json",
+      "qa_sha256": "AB17D9357A7F464C72C72A83BEB39CEA977B51C0E274BF632A55AD26318762AF",
+      "qa_status": "PASS",
+      "final_asset_manifest_sha256": "C9741991745BECB3D460A10A51BDC9D040374D946168286758D4B6C016F33920",
+      "release_candidate": true,
+      "payload_file_count": 79,
+      "payload_total_size": 3037916,
+      "payload_tree_sha256": "FB298D287D58D6A537C19632ACE406D43DA882B61476D6A7A2EA2902DA54F727",
+      "package_manifest_sha256": "070993D93FA8D8AB2E3BDA3081EFEC7500E2E77A8714D64E3AE301B1C847A8E4"
+    },
+    {
+      "label": "AEF background overrides",
+      "qa_file": "background_asset_qa.json",
+      "qa_sha256": "485C10CFBE81FA7E53281237A1A7EB1D91FE6266CED7C2E89F058A350AFCC078",
+      "qa_status": "PASS",
+      "final_asset_manifest_sha256": "D7DB66C07325A120DC7215D12E564261B0AD5581ED5B9ADCEEC3F3786CE59B64",
+      "release_candidate": true,
+      "payload_file_count": 44,
+      "payload_total_size": 1719100,
+      "payload_tree_sha256": "5C7023339F89774B8E86D12CB36865F504F1BA7CAB5FB188C5E0CD5C574F586B",
+      "package_manifest_sha256": "AD4CF8C436706A61772A47017CF3F1DC77BFB8130B6B6AA64920609C33FF4673"
+    }
+  ],
+  "overlay_roundtrip_verified": true,
+  "runtime_verification_valid": false,
+  "runtime_artifact_binding": {
+    "valid": false,
+    "expected": {
+      "data5.dat": {
+        "size": 389664768,
+        "sha256": "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+      },
+      "data6.dat": {
+        "size": 210499584,
+        "sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+      },
+      "malie.exe": {
+        "size": 4181504,
+        "sha256": "07CBB4AB77765C45344C6312A657FCD74A711B6C8F747F2295153BF621F8EE8E"
+      },
+      "malie_fabula.exe": {
+        "size": 4203008,
+        "sha256": "5335D430789AA0B8C84E16B30BE744F7D544D0D2F19E3D19B59A35F2F3BC365E"
+      }
+    }
+  },
+  "required_runtime_checks": [
+    "normal_install",
+    "installed_hash_verifier",
+    "tamper_detection",
+    "ordinary_uninstall_exact_restore",
+    "existing_overlay_backup_and_restore",
+    "original_game_unchanged",
+    "game_process_launched",
+    "aa_title_menu_korean",
+    "aef_title_menu_korean",
+    "aa_dynamic_menu_korean",
+    "aef_dynamic_menu_korean",
+    "aa_first_dialogue_korean",
+    "aef_first_dialogue_korean",
+    "aa_speaker_name_korean",
+    "aef_speaker_name_korean",
+    "aa_choice_text_korean",
+    "aef_choice_text_korean",
+    "dialogue_survived_30s",
+    "save_load_roundtrip",
+    "korean_glyphs_no_tofu",
+    "movie_surface_runtime",
+    "display1_window_binding",
+    "pid_audio_session_guard",
+    "runtime_restore_exact"
+  ],
+  "files": [
+    {
+      "path": "evidence/ui_final_user_acceptance.png",
+      "size": 731606,
+      "sha256": "492A7844FBC55545E8D6816F5E1B8FB1145E1741B206CCF62FA4F2E9C0235C5F"
+    },
+    {
+      "path": "files/data/font/anticcezannepro.otf",
+      "size": 6226952,
+      "sha256": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
+    },
+    {
+      "path": "files/data/font/tsukugopro-m.otf",
+      "size": 6226952,
+      "sha256": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
+    },
+    {
+      "path": "files/data5.dat",
+      "size": 389664768,
+      "sha256": "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+    },
+    {
+      "path": "files/data6.dat",
+      "size": 210499584,
+      "sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+    },
+    {
+      "path": "files/malie_kr.ini",
+      "size": 2856,
+      "sha256": "97FC23AA552A07F4811BE9A2F14C4567B37C34B5D30B442D8B90D7A2ECF7CDEC"
+    },
+    {
+      "path": "install_ko.ps1",
+      "size": 15142,
+      "sha256": "1EC8A98BA44B0BF231279905A23F318662AA960D32F1BAF743F8477A110E27CB"
+    },
+    {
+      "path": "licenses/OFL.txt",
+      "size": 4388,
+      "sha256": "7DE7A0650396D7C38DBFBA341B2B0601EF60C203026AA30AE3009B63D0991FBA"
+    },
+    {
+      "path": "manifests/aa_lower_config_runtime_first_manifest.json",
+      "size": 291265,
+      "sha256": "5896FCFCE3399CA6BF163CE55FCB5D732DDFB90AD8B62C9EED8FB6B7876FE5BD"
+    },
+    {
+      "path": "manifests/aef_lower_config_runtime_first_manifest.json",
+      "size": 296534,
+      "sha256": "29CF7DFBF675235372256BB26AE5763E00770100E04BB370F75CA227996B3756"
+    },
+    {
+      "path": "manifests/asset_evidence_manifest.json",
+      "size": 6038,
+      "sha256": "553AF18E7E94C76AE9AF14516B3781246B6AA1F5F3125E48B6D972C27916FF93"
+    },
+    {
+      "path": "manifests/data5.overlay-manifest.json",
+      "size": 565709,
+      "sha256": "F3A5509E6C7EB032916E15EA3690403F94EF0F84B29F27024A2CE061403CE638"
+    },
+    {
+      "path": "manifests/data6.overlay-manifest.json",
+      "size": 377181,
+      "sha256": "9ED7AC3BE821DCDBB351A4C1C30A6B905C1AE3E018F3BF5AD80EAA7DA3A713E2"
+    },
+    {
+      "path": "manifests/font_qa.json",
+      "size": 737,
+      "sha256": "9AD8C28769878A2B305355E7336A0CB116AE554F3856A7355DF0F5CD6D99E5C0"
+    },
+    {
+      "path": "manifests/game_text_settings_independent_pixel_qa.json",
+      "size": 9083,
+      "sha256": "27425AE5DAD431A603882E358165D0B7680CBFA177E684E25332C22C7A824602"
+    },
+    {
+      "path": "manifests/release_tree_audit.json",
+      "size": 378,
+      "sha256": "DDA93D17A811BE4011434B5AB1BAFE00A11F742D15A1BE2C96FF7D4C728A473A"
+    },
+    {
+      "path": "manifests/review_evidence_manifest.json",
+      "size": 19867,
+      "sha256": "295DEEC22208B0C65FCCD8C7A4EFD510AC409D92ECF0C3155B0238015CE6E44C"
+    },
+    {
+      "path": "manifests/runtime_first_ui_integration_report.json",
+      "size": 530,
+      "sha256": "0EA8C6AB6A8B5AC302A996E252555DACCC2E12CCB8EF7FAF573C02CD5413BC86"
+    },
+    {
+      "path": "manifests/ui_final_build_summary.json",
+      "size": 1161,
+      "sha256": "BF6C38198648668BF8A943D29AB359BC568831E4987F0B61F5B1E72F119BD786"
+    },
+    {
+      "path": "manifests/ui_final_user_acceptance.json",
+      "size": 1113,
+      "sha256": "851E8B64D12637D5DB2CE83A734227F2EFF921D676FF18AF17BEEE63434CE95F"
+    },
+    {
+      "path": "QA_STATUS.md",
+      "size": 702,
+      "sha256": "90EACE0EF0F6BF6B0FB4ED9C901FB3C77B72F94B19EDB6ECA690590C3C99F9C1"
+    },
+    {
+      "path": "README_KO.md",
+      "size": 2838,
+      "sha256": "BB952BB17959EEAB7C68C26120D5210FA6AB8885C7ECCC84EFE94468D277E232"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 1040,
+      "sha256": "63F1A4B69FD45090FD01B1F4366604BA3E10829D293324F5F77349F9A5204555"
+    },
+    {
+      "path": "uninstall_ko.ps1",
+      "size": 9765,
+      "sha256": "BCCC251A94B555533E1D90254D43136C709E7353F5E78C0E1127E26C23DDCA37"
+    },
+    {
+      "path": "verify_ko.ps1",
+      "size": 5737,
+      "sha256": "9CA1E04F68B6EF118675E1C76E8EC7BB8254890AB39CAE17657F3A5F0145F6E4"
+    }
+  ],
+  "promotion_allowed": false,
+  "runtime_blocker": {
+    "classification": "AEF_RUNTIME_NOT_SEPARATELY_REVERIFIED",
+    "known_fault": null,
+    "candidate_bytes_implicated": false,
+    "reason": "AA UI was user-accepted and frozen; separate AEF runtime re-verification remains pending."
+  },
+  "runtime_first_settings_repair": {
+    "status": "STATIC_PASS_RUNTIME_PENDING",
+    "aa_descriptor_count": 112,
+    "aef_descriptor_count": 114,
+    "game_text_button_pixel_qa": {
+      "path": "manifests/game_text_settings_independent_pixel_qa.json",
+      "size": 9083,
+      "sha256": "27425AE5DAD431A603882E358165D0B7680CBFA177E684E25332C22C7A824602"
+    },
+    "archive_deltas": {
+      "data5": {
+        "baseline_sha256": "2C54D94FE485AB4876FFC47CAC804BA9B8032F01D77187BF673B7F565919719C",
+        "output_sha256": "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C",
+        "file_count": 3009
+      },
+      "data6": {
+        "baseline_sha256": "BA5E1D7ECAD67B2117CC0AEBB9A2FF03E3F39100995884722DB8E398C332EBEF",
+        "output_sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70",
+        "file_count": 2004
+      }
+    },
+    "method": "RGBA lossless base composites; original indexed/palette state plates with central label/plaque slab reconstruction; effect-only layers source-exact.",
+    "user_reported_defects_addressed": [
+      "text setting labels overlaid on prior glyphs",
+      "black previous English glyph shadows",
+      "rounded button border distortion",
+      "selected/hover state highlight flattened or missing"
+    ]
+  }
+}

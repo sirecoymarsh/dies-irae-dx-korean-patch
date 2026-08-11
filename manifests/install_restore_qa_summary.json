@@ -1,0 +1,43 @@
+﻿{
+    "schema":  "dies-irae-dx-kr.public-qa-summary.v1",
+    "status":  "PASS_INSTALL_RESTORE",
+    "valid":  true,
+    "tested_release":  "1.0.0-rc1-ui-final",
+    "zip":  {
+                "name":  "Dies_irae_DX_KR_1.0.0-rc1-ui-final.zip",
+                "size":  597545906,
+                "sha256":  "BC11AA84A46AE4BDF564F46F4A1CE43A6E590B2070567FAB2AA0FBE6345FE04F"
+            },
+    "archives":  {
+                     "data5.dat":  {
+                                       "path":  "P:\\AI\\Codex\\projects\\dies_irae_dx_kr_final_release_v14\\install_restore_qa\\fixture\\data5.dat",
+                                       "filename":  "data5.dat",
+                                       "size":  389664768,
+                                       "sha256":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                                   },
+                     "data6.dat":  {
+                                       "path":  "P:\\AI\\Codex\\projects\\dies_irae_dx_kr_final_release_v14\\install_restore_qa\\fixture\\data6.dat",
+                                       "filename":  "data6.dat",
+                                       "size":  210499584,
+                                       "sha256":  "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+                                   }
+                 },
+    "checks":  {
+                   "normal_install":  true,
+                   "second_install_refused_without_changes":  true,
+                   "installed_hash_verifier":  true,
+                   "tamper_detection":  true,
+                   "tampered_baseline_preflight_rejection":  true,
+                   "tampered_payload_preflight_rejection":  true,
+                   "ordinary_uninstall_exact_restore":  true,
+                   "second_uninstall_refused_without_changes":  true,
+                   "existing_overlay_refusal":  true,
+                   "existing_overlay_backup_and_restore":  true,
+                   "tampered_backup_preflight_rejection":  true,
+                   "missing_file_detection":  true,
+                   "force_restore":  true,
+                   "original_game_unchanged":  true,
+                   "game_process_launched_by_this_harness":  false
+               },
+    "tested_artifacts":  null
+}

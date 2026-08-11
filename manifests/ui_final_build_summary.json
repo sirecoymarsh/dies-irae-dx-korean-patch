@@ -1,0 +1,24 @@
+﻿{
+    "schema":  "dies-irae-dx-kr.ui-final-build-summary.v1",
+    "status":  "PASS_USER_ACCEPTED_FREEZE",
+    "method":  "no redraw, no recolor, no rescale; exact source indices/RGBA copied only on original normal-frame mask",
+    "scope":  {
+                  "normal_descriptors":  49,
+                  "selected_descriptors_changed":  0,
+                  "hover_descriptors_changed":  0,
+                  "portrait_or_name_plaque_interior_changed":  0,
+                  "unrelated_assets_changed":  0
+              },
+    "normal_descriptor_count":  49,
+    "top_changed_pixels":  546,
+    "archives":  {
+                     "data5.dat":  {
+                                       "size":  389664768,
+                                       "sha256":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                                   },
+                     "data6.dat":  {
+                                       "size":  210499584,
+                                       "sha256":  "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+                                   }
+                 }
+}

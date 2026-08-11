@@ -1,0 +1,6 @@
+# Large distributable binaries are published as GitHub Release assets.
+*.zip
+*.dat
+*.bak
+*.tmp
+__pycache__/

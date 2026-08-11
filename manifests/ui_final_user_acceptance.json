@@ -1,0 +1,22 @@
+﻿{
+    "schema":  "dies-irae-dx-kr.ui-final-user-acceptance.v1",
+    "status":  "USER_ACCEPTED_FREEZE",
+    "instruction":  "UI는 이제 그만",
+    "ui_changes_forbidden":  true,
+    "accepted_scope":  "title toolbar, game/text/sound/voice configuration UI, voice normal/selected cards",
+    "screenshot":  {
+                       "path":  "evidence/ui_final_user_acceptance.png",
+                       "size":  731606,
+                       "sha256":  "492A7844FBC55545E8D6816F5E1B8FB1145E1741B206CCF62FA4F2E9C0235C5F"
+                   },
+    "archives":  {
+                     "data5.dat":  {
+                                       "size":  389664768,
+                                       "sha256":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                                   },
+                     "data6.dat":  {
+                                       "size":  210499584,
+                                       "sha256":  "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+                                   }
+                 }
+}
