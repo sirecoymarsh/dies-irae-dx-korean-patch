@@ -1,0 +1,15 @@
+{
+  "schema": "dies-irae-steam-kr.rc7-static-gate.v1",
+  "status": "PASS",
+  "valid": true,
+  "checks": {
+    "data4cn": true,
+    "no_data5": true,
+    "no_exe": true,
+    "no_patch_exe": true,
+    "zip_order": true,
+    "zip_bytes": true
+  },
+  "zip_sha256": "EA3FF99242CFB2A15C308548B2BD11BD4A27B460EC5B2493C381CE3E1E067AAD",
+  "release_manifest_sha256": "D5A59D685FE50E72027184810C744BAAC24A6227F2DEF7EB284EB84EAE4B1288"
+}
