@@ -1,23 +1,74 @@
-# Steam판 한국어 패치
+﻿# Steam판 한국어 패치
 
-대상: Steam AppID 644540, build 21665074  
-후보: `1.0.0-steam-build21665074-rc7`
+대상: Steam AppID `644540`, build `21665074`
+최종 버전: `1.0.3-steam-aa4`
 
-Steam 실행 파일은 `data5.dat`를 열지 않고 `data4.cn.dat`까지만 읽습니다. 이 포트는 공식 Steam `data4.cn.dat` 1,379개 항목을 보존하고, 최종 DX 한국어 빌드의 3,009개 항목을 한국어 우선순위로 병합한 4,386개 항목의 `data4.cn.dat`를 설치합니다.
+## 다운로드
 
-- Steam `malie.exe` 수정 없음
-- 병합 `data4.cn.dat`: `096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3`
-- 배포 ZIP: `EA3FF99242CFB2A15C308548B2BD11BD4A27B460EC5B2493C381CE3E1E067AAD`
-- LIBP 추출·재패킹·전 항목 round-trip: PASS
-- 설치·검증·원상복원 스크립트 정적 검사: PASS
-- 실제 Steam 런타임: 로그인 후 검증 대기
+대용량 DAT와 ZIP은 Git 기록에 넣지 않습니다. 완성된 설치 패키지는
+[GitHub Release `steam-v1.0.3-aa4`](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-v1.0.3-aa4)에서 받으십시오.
 
-대용량 `data4.cn.dat`와 ZIP은 Git 기록에 넣지 않고 GitHub Release 자산으로 배포합니다.
+## 언어 계약
+
+- 게임에서 **English** 선택: 한국어 본문·인물명·선택지·UI
+- **Chinese** 선택: Steam판 중국어 보존
+- 일본어 음성 보존
+
+## 최종 구조
+
+Steam판은 시나리오 본문과 인물명·선택지가 서로 다른 초기화 경로를 사용합니다.
+최종 aa4는 다음 세 위치에 동일한 DX 최종 스크립트를 배치합니다.
+
+1. `data3.dat` → `data/system/exec.dat`
+2. `data4.cn.dat` → 영어 슬롯 `data/system/patch.en.dat`
+3. DX 승인 `data5.dat` → `data/system/exec.dat`
+
+실패 후보에서는 1번만 변경하여 `data4.cn.dat`의 영어 슬롯이 인물명과 선택지를 다시 영어로 덮어썼습니다.
+aa4는 실제 우선순위에 맞춰 2번까지 교체하여 해결했습니다.
+
+## 검증
+
+- 한국어 본문: PASS
+- 한국어 인물명 `카스미`: PASS
+- 한국어 선택지: PASS
+- 중국어 슬롯 보존: PASS
+- Steam API import 보존: PASS
+- 설치 → 검증 → 제거 → 원본 복원: PASS
+- ZIP CRC 및 전체 엔트리 SHA-256 대조: PASS
+- Microsoft Defender: 위협 없음
+
+실제 실행 증거는 [`steam/evidence`](./evidence)에 있습니다.
 
 ## 설치
 
+1. Steam에서 게임을 종료합니다.
+2. Release ZIP을 원하는 폴더에 풉니다.
+3. PowerShell에서 다음 명령을 실행합니다. 게임 경로는 자동 감지되며, 필요할 때만 `-GameDir`을 지정합니다.
+
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\install_ko.ps1 -GameDir 'Y:\SteamLibrary\steamapps\common\Dies irae ~Amantes amentes~'
+powershell.exe -ExecutionPolicy Bypass -File .\install_ko_steam.ps1
 ```
 
-동일한 `-GameDir`로 `verify_ko.ps1`을 실행해 검증하고, `uninstall_ko.ps1`로 원본을 복원합니다.
+경로를 직접 지정하는 예:
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\install_ko_steam.ps1 -GameDir '<SteamLibrary>\steamapps\common\Dies irae ~Amantes amentes~'
+```
+
+## 검증
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\verify_ko_steam.ps1
+```
+
+## 제거 및 원본 복원
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\uninstall_ko_steam.ps1
+```
+
+게임을 실행한 뒤 언어 메뉴에서 **English**를 선택하면 한국어가 표시됩니다.
+
+## 무결성
+
+[`steam/release/SHA256SUMS.txt`](./release/SHA256SUMS.txt)와 [`steam/manifests`](./manifests)를 확인하십시오.

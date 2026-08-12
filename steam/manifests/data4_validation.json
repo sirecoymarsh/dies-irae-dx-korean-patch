@@ -1,0 +1,31 @@
+{
+    "schema":  "dies-irae-steam-kr.data4-english-slot-patch.v1",
+    "status":  "PASS",
+    "input":  {
+                  "size":  485601280,
+                  "sha256":  "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3"
+              },
+    "output":  {
+                   "size":  485601280,
+                   "sha256":  "8945DC46FF25983174C31A501CFE1D3874CEDF4E02E13C670F772E0532C8A7FE"
+               },
+    "layout":  {
+                   "indexCount":  7559,
+                   "fileCount":  4386,
+                   "dataStart":  260096,
+                   "allOffsetsPreserved":  true,
+                   "archiveSizePreserved":  true,
+                   "ciphertextOutsideAllowlistIdentical":  true
+               },
+    "change":  {
+                   "path":  "data\\system\\patch.en.dat",
+                   "nodeIndex":  7555,
+                   "sequence":  4382,
+                   "slotStart":  470136832,
+                   "slotEndExclusive":  485593088,
+                   "originalSize":  15455745,
+                   "originalSha256":  "F52FE722811D8A3B374C7F3E9FE18D142BAE3CC05CF1B6286BF6FF1038B033A5",
+                   "patchedSize":  10123024,
+                   "patchedSha256":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003"
+               }
+}

@@ -1,0 +1,13 @@
+{
+    "schema":  "dies-irae-steam-kr.aa4-lifecycle.v2",
+    "status":  "PASS",
+    "test":  "clean Steam fixture install, verify, uninstall, exact restore",
+    "installed":  {
+                      "data3":  "0DEA33565F85BB2B3321A0B8FA34B57E066DDE3DBEA739D2E5EB3474D00A6968",
+                      "data4":  "8945DC46FF25983174C31A501CFE1D3874CEDF4E02E13C670F772E0532C8A7FE"
+                  },
+    "restored":  {
+                     "data3":  "582E3A2DE4DFA9AFE0FE6550FE735F817433E49A9E551E6EA97D3DB68F8F7269",
+                     "data4":  "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3"
+                 }
+}

@@ -1,108 +1,154 @@
 {
-  "schema": "dies-irae-steam-kr.release-manifest.v2",
-  "release_version": "1.0.0-steam-build21665074-rc7",
-  "status": "PASS_STATIC_STEAM_MERGED_DATA4CN_RUNTIME_PENDING",
-  "steam": {
-    "appid": 644540,
-    "buildid": 21665074
-  },
-  "compatibility": {
-    "source_exec_sha256": "1887ACB482A0793460E972A78B0501AE16C69298ECAE1D72DF8DF51F9B021A1E",
-    "exact_source_exec_reuse": true,
-    "message_count": 39945,
-    "c0_topology_equal": true,
-    "korean_exec_sha256": "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003",
-    "original_exe_sha256": "CFDAA598422245A36B2333F1E923C8E808412D0360C86EF83D914ADF4D6EA926",
-    "executable_modified": false,
-    "installed_exe_sha256": "CFDAA598422245A36B2333F1E923C8E808412D0360C86EF83D914ADF4D6EA926",
-    "steam_loads_data5": false,
-    "merge_result_files": 4386,
-    "merged_data4cn_sha256": "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3"
-  },
-  "baseline": {
-    "data1.dat": "2EFE8AA9FFD16E23A6B80A098946079FA6E124F16C4264657685097238D576A2",
-    "data2.dat": "D900B788306D1F7016FDAA592D3839E0E0845529435B1E8D73931E9D3F17AB39",
-    "data3.dat": "582E3A2DE4DFA9AFE0FE6550FE735F817433E49A9E551E6EA97D3DB68F8F7269",
-    "data4.cn.dat": "A00FAB55E1E8FD1C49E2D13AA8E5F399D7CA958FB369891633B0CAE2FB89584B",
-    "malie.exe": "CFDAA598422245A36B2333F1E923C8E808412D0360C86EF83D914ADF4D6EA926",
-    "malie.ini": "6C84095D163250297A506EFA191BA930DD2D87440758C40DF45A3F0D88E24B94"
-  },
-  "installed_payload": {
-    "data4.cn.dat": "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3",
-    "data\\font\\anticcezannepro.otf": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F",
-    "data\\font\\tsukugopro-m.otf": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F",
-    "malie_kr.ini": "97FC23AA552A07F4811BE9A2F14C4567B37C34B5D30B442D8B90D7A2ECF7CDEC"
-  },
-  "files": [
-    {
-      "path": "evidence/exec_comparison.json",
-      "size": 41985,
-      "sha256": "5E975DE2D800110302661F852E272C4E3859CC1DD01AC836A64BC6FB95AF23DC"
-    },
-    {
-      "path": "evidence/merge_build_manifest.json",
-      "size": 850559,
-      "sha256": "5D5E49A3FF3030FE4EC05EF6B574CA018647330C42628AB819E3C0901D2ED083"
-    },
-    {
-      "path": "evidence/steam_archive_comparison.json",
-      "size": 178931,
-      "sha256": "5F39746A20EBF945C1026F419A251DD356A1235E9FB717E9FCA85E990973E2A5"
-    },
-    {
-      "path": "files/data/font/anticcezannepro.otf",
-      "size": 6226952,
-      "sha256": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
-    },
-    {
-      "path": "files/data/font/tsukugopro-m.otf",
-      "size": 6226952,
-      "sha256": "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
-    },
-    {
-      "path": "files/data4.cn.dat",
-      "size": 485601280,
-      "sha256": "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3"
-    },
-    {
-      "path": "files/malie_kr.ini",
-      "size": 2856,
-      "sha256": "97FC23AA552A07F4811BE9A2F14C4567B37C34B5D30B442D8B90D7A2ECF7CDEC"
-    },
-    {
-      "path": "install_ko.ps1",
-      "size": 10966,
-      "sha256": "C13D91E6EB769216F47447775FF26E62591A141D3867107F55515449685B3E3D"
-    },
-    {
-      "path": "licenses/OFL.txt",
-      "size": 4388,
-      "sha256": "7DE7A0650396D7C38DBFBA341B2B0601EF60C203026AA30AE3009B63D0991FBA"
-    },
-    {
-      "path": "QA_STATUS.md",
-      "size": 292,
-      "sha256": "E09204F7C2BA9C898FC59D28FC757084C487C960F92D00B72EAE348952204559"
-    },
-    {
-      "path": "README_KO.md",
-      "size": 1303,
-      "sha256": "667F97A65DD80F23A31D45B3021A8AFB2EA1EDFEB5E91B80FF4ABAE2046D3033"
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "size": 1040,
-      "sha256": "63F1A4B69FD45090FD01B1F4366604BA3E10829D293324F5F77349F9A5204555"
-    },
-    {
-      "path": "uninstall_ko.ps1",
-      "size": 9715,
-      "sha256": "418F7BD0244FA0926EF9CA0F7E7C6FE12FFB95724D3FF69F9FDCDECBE01380E5"
-    },
-    {
-      "path": "verify_ko.ps1",
-      "size": 5696,
-      "sha256": "49D34D09B1F31E5F5DA81B1F8E8CA1153075E9386FDB47107EFFB79BDDBF2A9A"
-    }
-  ]
+    "schema":  "dies-irae-steam-kr.release-manifest.v4",
+    "version":  "1.0.3-steam-aa4",
+    "status":  "FINAL_RUNTIME_PASS",
+    "target":  {
+                   "steamAppId":  644540,
+                   "buildId":  21665074,
+                   "edition":  "Amantes amentes",
+                   "selectorContract":  {
+                                            "English":  "ko-KR",
+                                            "Chinese":  "zh-CN preserved"
+                                        }
+               },
+    "compatibleOriginals":  {
+                                "malie.exe":  "CFDAA598422245A36B2333F1E923C8E808412D0360C86EF83D914ADF4D6EA926",
+                                "data3.dat":  "582E3A2DE4DFA9AFE0FE6550FE735F817433E49A9E551E6EA97D3DB68F8F7269",
+                                "data4.cn.dat":  "096AE9AB25CF611187E83043A8DD80BAB6E8CB32249FA2E6FC95E0FCD6E82DB3"
+                            },
+    "payload":  {
+                    "malie.exe":  "FF105876B39458E54CA8C4C8E5231CE013FB2AC4D3554B8611BD98C85C88CC30",
+                    "data3.dat":  "0DEA33565F85BB2B3321A0B8FA34B57E066DDE3DBEA739D2E5EB3474D00A6968",
+                    "data4.cn.dat":  "8945DC46FF25983174C31A501CFE1D3874CEDF4E02E13C670F772E0532C8A7FE",
+                    "data5.dat":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                },
+    "contentChannels":  {
+                            "dxFinalExec":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003",
+                            "dxFinalTranslationCsv":  "FE760AA382DA0C599E119AF1441E0739C90A87083D554D88386131C8BC706B16",
+                            "data4EnglishPatch":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003",
+                            "preservedChinesePatch":  "F8DB4D85A15A71244C8F3555D061C4441471EAB04D7C66486E42EC628775D6B0"
+                        },
+    "validations":  {
+                        "archiveEntryDelta":  "PASS",
+                        "ciphertextOutsideData4Allowlist":  "IDENTICAL",
+                        "fixtureLifecycle":  "PASS",
+                        "liveInstallHashes":  "PASS",
+                        "koreanScenario":  "PASS",
+                        "koreanSpeakerNames":  "PASS",
+                        "koreanChoices":  "PASS",
+                        "chinesePreservation":  "PASS"
+                    },
+    "inventory":  {
+                      "excludesSelf":  true,
+                      "fileCount":  21,
+                      "totalBytes":  974132310,
+                      "treeSha256":  "3D1C9922F211F7FB731BF60EA5960DD4FF4AE526B972D24DD3B3C2606350E3DB"
+                  },
+    "files":  [
+                  {
+                      "path":  "evidence/runtime_chinese_slot_preserved.png",
+                      "size":  363609,
+                      "sha256":  "2CEA61FBA9CD78638F6AA1124B1C7FAA81A6D995A3603F2A5737819B5476B232"
+                  },
+                  {
+                      "path":  "evidence/runtime_choice_text_korean_user_verified.png",
+                      "size":  921159,
+                      "sha256":  "73090440DDB07510E3732EB39E45A3ED97021E79C39DF715D9AC97129BBC2298"
+                  },
+                  {
+                      "path":  "evidence/runtime_english_slot_korean_body.png",
+                      "size":  301630,
+                      "sha256":  "BC6D2DDE026996B769F085B04E4FC63DCFEE323B693452162FA30D5FD2AAC483"
+                  },
+                  {
+                      "path":  "evidence/runtime_speaker_name_korean_user_verified.png",
+                      "size":  973652,
+                      "sha256":  "61B17E3452FFB6B7E4D4AC883110E0672743979A6190AA9B0E6EBC3798BFF8E7"
+                  },
+                  {
+                      "path":  "files/data/font/anticcezannepro.otf",
+                      "size":  6226952,
+                      "sha256":  "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
+                  },
+                  {
+                      "path":  "files/data/font/tsukugopro-m.otf",
+                      "size":  6226952,
+                      "sha256":  "BD505B1E18E9F3484011CE1014C0CF7FC73CC1338C790FA1AAB1A3027856638F"
+                  },
+                  {
+                      "path":  "files/data3.dat",
+                      "size":  79604736,
+                      "sha256":  "0DEA33565F85BB2B3321A0B8FA34B57E066DDE3DBEA739D2E5EB3474D00A6968"
+                  },
+                  {
+                      "path":  "files/data4.cn.dat",
+                      "size":  485601280,
+                      "sha256":  "8945DC46FF25983174C31A501CFE1D3874CEDF4E02E13C670F772E0532C8A7FE"
+                  },
+                  {
+                      "path":  "files/data5.dat",
+                      "size":  389664768,
+                      "sha256":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                  },
+                  {
+                      "path":  "files/malie.exe",
+                      "size":  4203520,
+                      "sha256":  "FF105876B39458E54CA8C4C8E5231CE013FB2AC4D3554B8611BD98C85C88CC30"
+                  },
+                  {
+                      "path":  "files/malie_kr.ini",
+                      "size":  2856,
+                      "sha256":  "97FC23AA552A07F4811BE9A2F14C4567B37C34B5D30B442D8B90D7A2ECF7CDEC"
+                  },
+                  {
+                      "path":  "install_ko_steam.ps1",
+                      "size":  14768,
+                      "sha256":  "4C4B0C1EF1086598F3B68856E3B57FDB855730313CA9EE6433BCBCADACE1E1CE"
+                  },
+                  {
+                      "path":  "manifests/data3_validation.json",
+                      "size":  1852,
+                      "sha256":  "38BCD3040EA9172F735015F8B94475D68EBF0212F3603103CD9650B91402ABE2"
+                  },
+                  {
+                      "path":  "manifests/data4_validation.json",
+                      "size":  1342,
+                      "sha256":  "DB4848C6ADB3F34BD7604DA31D398BFA903C691A87504B12D6203CAC577F6A9B"
+                  },
+                  {
+                      "path":  "manifests/language_contract.json",
+                      "size":  2556,
+                      "sha256":  "F2ECA635EF7633F0B5E030206FBB5F553AFF592950E211981A8D1ADA7F9286BC"
+                  },
+                  {
+                      "path":  "manifests/lifecycle_validation.json",
+                      "size":  645,
+                      "sha256":  "69B940707EDA3135D731B112CC63F406ADB678D19924246DDEAE74905014CD56"
+                  },
+                  {
+                      "path":  "manifests/runtime_validation.json",
+                      "size":  1446,
+                      "sha256":  "2776AF5EFA8F2CD161D74866855456E3F8AE37A480DD1D1C26A8400F868FBEC3"
+                  },
+                  {
+                      "path":  "manifests/steam_executable_port.json",
+                      "size":  2793,
+                      "sha256":  "17CFE04FCAAE249E2AFA02AAEE2265B2759537247D63AD95330E68E757051A85"
+                  },
+                  {
+                      "path":  "README_KO.md",
+                      "size":  2636,
+                      "sha256":  "C2691E2F5FBCFD63E6980092CB43025B3D7E6CAA00495AAF54825E4DDD843A94"
+                  },
+                  {
+                      "path":  "uninstall_ko_steam.ps1",
+                      "size":  8202,
+                      "sha256":  "9AD04CBE41A469559BE4F7D3DC185990397F89641231B954FEBCB933B52930D6"
+                  },
+                  {
+                      "path":  "verify_ko_steam.ps1",
+                      "size":  4956,
+                      "sha256":  "E5449164857B080DF8F3C732AF2060620955492F638C903FD995C3C946B65336"
+                  }
+              ]
 }
