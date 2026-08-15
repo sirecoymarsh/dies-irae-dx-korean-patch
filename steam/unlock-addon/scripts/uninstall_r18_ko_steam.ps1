@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$GameDir = '',
     [string]$StateRoot = '',
     [switch]$ForceRestore
@@ -21,7 +21,7 @@ $StateRoot = [IO.Path]::GetFullPath($StateRoot)
 $gameStateRoot = Join-Path $StateRoot (Get-PathId $GameDir)
 $activeManifest = Join-Path $gameStateRoot 'active_manifest.json'
 if (-not (Test-Path -LiteralPath $activeManifest -PathType Leaf)) {
-    throw "활성 R-18 애드온 설치 manifest가 없습니다: $activeManifest"
+    throw "활성 개방 애드온 설치 manifest가 없습니다: $activeManifest"
 }
 Assert-GameStopped $GameDir
 $manifest = Get-Content -Raw -LiteralPath $activeManifest -Encoding UTF8 | ConvertFrom-Json
@@ -101,7 +101,7 @@ try {
     throw
 }
 
-Write-Host 'Dies irae Steam R-18 한국어 애드온 제거 및 설치 전 상태 복원 완료'
+Write-Host 'Dies irae Steam 개방 애드온 제거 및 설치 전 상태 복원 완료'
 Write-Host "게임: $GameDir"
 Write-Host '기존 Steam 한국어패치는 그대로 유지됩니다.'
 Write-Host "원본 백업 보존 위치: $($manifest.backupDir)"

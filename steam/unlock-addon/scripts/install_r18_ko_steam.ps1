@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$GameDir = '',
     [string]$R18Zip = '',
     [string]$StateRoot = '',
@@ -40,7 +40,7 @@ $gameStateRoot = Join-Path $StateRoot (Get-PathId $GameDir)
 $backupRoot = Join-Path $gameStateRoot 'backups'
 $activeManifest = Join-Path $gameStateRoot 'active_manifest.json'
 if (Test-Path -LiteralPath $activeManifest -PathType Leaf) {
-    throw "이미 활성화된 R-18 애드온 설치 상태가 있습니다: $activeManifest"
+    throw "이미 활성화된 개방 애드온 설치 상태가 있습니다: $activeManifest"
 }
 
 # 기존 Steam 한국어패치 1.0.3-steam-aa4와 플랫폼 파일이 그대로인지 먼저 확인한다.
@@ -76,7 +76,7 @@ try {
         if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { continue }
         $actual = Get-Sha256 $target
         if (($recognized[$relative] -notcontains $actual) -and -not $AllowBackupExistingR18Files) {
-            throw "알 수 없는 기존 R-18 파일이 있습니다: $target`n해시: $actual`n백업 후 교체하려면 -AllowBackupExistingR18Files를 명시하십시오."
+            throw "알 수 없는 기존 개방 애드온 파일이 있습니다: $target`n해시: $actual`n백업 후 교체하려면 -AllowBackupExistingR18Files를 명시하십시오."
         }
     }
 
@@ -158,8 +158,8 @@ try {
     }
 }
 
-Write-Host "Dies irae Steam R-18 한국어 애드온 $($config.ReleaseVersion) 설치 완료"
+Write-Host "Dies irae Steam 개방 애드온 $($config.ReleaseVersion) 설치 완료"
 Write-Host "게임: $GameDir"
 Write-Host "실행 파일: $(Join-Path $GameDir 'malie_fabula.exe')"
 Write-Host "백업: $backupDir"
-Write-Host '2_R18_한국어_실행.cmd 또는 launch_r18_ko_steam.ps1을 사용하십시오.'
+Write-Host '2_개방_한국어_실행.cmd 또는 launch_r18_ko_steam.ps1을 사용하십시오.'

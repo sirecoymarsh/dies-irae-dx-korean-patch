@@ -1,7 +1,7 @@
-﻿{
+{
     "schema":  "dies-irae-steam-r18-kr.addon-contract.v1",
-    "version":  "1.0.0-steam-r18-addon",
-    "delivery":  "delta-style installer requiring exact official R-18 ZIP",
+    "version":  "1.0.0-steam-unlock-addon",
+    "delivery":  "delta-style installer requiring exact official dies_irae_r18_patch.zip",
     "officialZip":  {
                         "included":  false,
                         "sha256":  "2D170EA430D30E5FDB21AA5659380E3A3920652FB6FE2E2BA431638401CF52AD",

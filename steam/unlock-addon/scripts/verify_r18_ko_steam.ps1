@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$GameDir = '',
     [string]$StateRoot = ''
 )
@@ -20,7 +20,7 @@ $StateRoot = [IO.Path]::GetFullPath($StateRoot)
 $gameStateRoot = Join-Path $StateRoot (Get-PathId $GameDir)
 $activeManifest = Join-Path $gameStateRoot 'active_manifest.json'
 if (-not (Test-Path -LiteralPath $activeManifest -PathType Leaf)) {
-    throw "활성 R-18 애드온 설치 manifest가 없습니다: $activeManifest"
+    throw "활성 개방 애드온 설치 manifest가 없습니다: $activeManifest"
 }
 $manifest = Get-Content -Raw -LiteralPath $activeManifest -Encoding UTF8 | ConvertFrom-Json
 if ($manifest.schema -ne 'dies-irae-steam-r18-kr.install-manifest.v1') { throw '지원하지 않는 설치 manifest입니다.' }
@@ -47,7 +47,7 @@ if (-not (Test-Path -LiteralPath $backupManifest -PathType Leaf)) {
     throw "백업 manifest가 없습니다: $backupManifest"
 }
 
-Write-Host 'Dies irae Steam R-18 한국어 애드온 검증 PASS'
+Write-Host 'Dies irae Steam 개방 애드온 검증 PASS'
 Write-Host "게임: $GameDir"
 Write-Host "버전: $($manifest.releaseVersion)"
 Write-Host "실행 파일: $(Join-Path $GameDir 'malie_fabula.exe')"

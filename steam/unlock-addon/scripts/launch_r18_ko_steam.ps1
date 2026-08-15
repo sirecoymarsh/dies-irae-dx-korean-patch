@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$GameDir = '',
     [string]$StateRoot = ''
 )
@@ -11,4 +11,4 @@ $GameDir = [IO.Path]::GetFullPath($GameDir)
 & (Join-Path $PackageRoot 'verify_r18_ko_steam.ps1') -GameDir $GameDir -StateRoot $StateRoot
 $exe = Join-Path $GameDir 'malie_fabula.exe'
 Start-Process -FilePath $exe -WorkingDirectory $GameDir
-Write-Host "Acta est Fabula R-18 한국어판 실행: $exe"
+Write-Host "Acta est Fabula 한국어 개방판 실행: $exe"

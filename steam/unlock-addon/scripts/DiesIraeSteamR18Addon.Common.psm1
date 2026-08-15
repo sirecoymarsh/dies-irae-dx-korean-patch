@@ -1,9 +1,9 @@
-﻿Set-StrictMode -Version Latest
+Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $script:Config = [ordered]@{
     Schema = 'dies-irae-steam-r18-kr-addon.config.v1'
-    ReleaseVersion = '1.0.0-steam-r18-addon'
+    ReleaseVersion = '1.0.0-steam-unlock-addon'
     SteamAppId = '644540'
     SteamBuildId = '21665074'
     AaHashes = [ordered]@{
@@ -187,7 +187,7 @@ function Find-OfficialR18Zip([string]$RequestedPath, [string]$PackageRoot) {
             if ($actual -eq $script:Config.OfficialZip.Sha256) { return $full }
             if (-not [string]::IsNullOrWhiteSpace($RequestedPath) -and
                 $full -eq [IO.Path]::GetFullPath($RequestedPath)) {
-                throw "지정한 R-18 패치 ZIP 해시가 다릅니다: $full`n실제: $actual"
+                throw "지정한 개방 패치 ZIP 해시가 다릅니다: $full`n실제: $actual"
             }
         }
     }
@@ -196,7 +196,7 @@ function Find-OfficialR18Zip([string]$RequestedPath, [string]$PackageRoot) {
             Add-Type -AssemblyName System.Windows.Forms
             $dialog = New-Object Windows.Forms.OpenFileDialog
             $dialog.Title = '공식 dies_irae_r18_patch.zip 선택'
-            $dialog.Filter = 'Dies irae R-18 patch (dies_irae_r18_patch.zip)|dies_irae_r18_patch.zip|ZIP files (*.zip)|*.zip'
+            $dialog.Filter = 'Dies irae unlock patch (dies_irae_r18_patch.zip)|dies_irae_r18_patch.zip|ZIP files (*.zip)|*.zip'
             $dialog.CheckFileExists = $true
             if ($dialog.ShowDialog() -eq [Windows.Forms.DialogResult]::OK) {
                 $selected = [IO.Path]::GetFullPath($dialog.FileName)
@@ -228,10 +228,10 @@ function Expand-VerifiedR18Zip([string]$ZipPath, [string]$Destination) {
         }
         $expected = @($script:Config.OfficialZip.Data4Entry, $script:Config.OfficialZip.ExeEntry)
         if ($entryMap.Count -ne $expected.Count) {
-            throw "공식 R-18 ZIP 파일 항목 수가 예상과 다릅니다: $($entryMap.Count)"
+            throw "공식 개방 ZIP 파일 항목 수가 예상과 다릅니다: $($entryMap.Count)"
         }
         foreach ($name in $expected) {
-            if (-not $entryMap.ContainsKey($name)) { throw "공식 R-18 ZIP 항목이 없습니다: $name" }
+            if (-not $entryMap.ContainsKey($name)) { throw "공식 개방 ZIP 항목이 없습니다: $name" }
         }
         $data4 = Join-Path $Destination 'data4.dat'
         $exe = Join-Path $Destination 'malie_fabula.official.exe'

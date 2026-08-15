@@ -1,4 +1,4 @@
-﻿# Dies irae DX / Steam 한국어 패치
+# Dies irae DX / Steam 한국어 패치
 
 *Dies irae ~Amantes amentes~* 및 *Dies irae ~Acta est Fabula~* 한국어 패치 저장소입니다.
 
@@ -7,7 +7,7 @@
 대용량 DAT와 배포 ZIP은 Git 기록에 넣지 않고 [GitHub Releases](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases)에서 제공합니다.
 
 - **Steam판 최종본:** [`steam-v1.0.3-aa4`](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-v1.0.3-aa4)
-- **Steam R-18 한국어 애드온:** [steam-r18-addon-v1.0.0](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-r18-addon-v1.0.0)
+- **Steam 개방 애드온:** [steam-unlock-addon-v1.0.0](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-unlock-addon-v1.0.0)
 - DX 패키지판: `v1.0.0-rc1`
 
 ## Steam판
