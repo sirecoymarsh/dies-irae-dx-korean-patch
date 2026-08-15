@@ -1,0 +1,37 @@
+﻿{
+    "schema":  "dies-irae-steam-r18-kr.addon-contract.v1",
+    "version":  "1.0.0-steam-r18-addon",
+    "delivery":  "delta-style installer requiring exact official R-18 ZIP",
+    "officialZip":  {
+                        "included":  false,
+                        "sha256":  "2D170EA430D30E5FDB21AA5659380E3A3920652FB6FE2E2BA431638401CF52AD",
+                        "entries":  [
+                                        "r18_patch_20171226/data4.dat",
+                                        "r18_patch_20171226/malie_fabula.exe"
+                                    ]
+                    },
+    "installed":  [
+                      {
+                          "path":  "data4.dat",
+                          "source":  "official ZIP",
+                          "sha256":  "16A001365E7AE6D98BC30838EF3727AC4DA600AA5EC5F573C8475EF8A7D92C63"
+                      },
+                      {
+                          "path":  "malie_fabula.exe",
+                          "source":  "official ZIP executable plus exact byte allowlist",
+                          "sha256":  "6A5E7DDD3FC2BEE77539F09F82F3F89C4116D32AB7E3480CF7E7153A168CF818"
+                      },
+                      {
+                          "path":  "data6.dat",
+                          "source":  "Korean Acta overlay",
+                          "sha256":  "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+                      }
+                  ],
+    "requires":  {
+                     "steamKoreanPatch":  "1.0.3-steam-aa4",
+                     "appId":  "644540",
+                     "buildId":  "21665074"
+                 },
+    "stateRoot":  "%LOCALAPPDATA%\\DiesIraeSteamKRR18",
+    "reversible":  true
+}

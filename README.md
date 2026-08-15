@@ -7,6 +7,7 @@
 대용량 DAT와 배포 ZIP은 Git 기록에 넣지 않고 [GitHub Releases](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases)에서 제공합니다.
 
 - **Steam판 최종본:** [`steam-v1.0.3-aa4`](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-v1.0.3-aa4)
+- **Steam R-18 한국어 애드온:** [steam-r18-addon-v1.0.0](https://github.com/sirecoymarsh/dies-irae-dx-korean-patch/releases/tag/steam-r18-addon-v1.0.0)
 - DX 패키지판: `v1.0.0-rc1`
 
 ## Steam판

@@ -1,0 +1,16 @@
+{
+  "schema": "dies-irae-steam-r18-kr.distribution.v2",
+  "file": "Dies_irae_Steam_KR_R18_Addon_1.0.0_20260816.zip",
+  "size": 205576966,
+  "sha256": "12605DE6094DCB438F199CB6C6F86EC855D022694AE409A73287FF12D32B56E8",
+  "entryCount": 18,
+  "version": "1.0.0-steam-r18-addon",
+  "liveSteamValidation": "PASS",
+  "requiresOfficialZip": true,
+  "officialZipIncluded": false,
+  "target": {
+    "steamAppId": "644540",
+    "buildId": "21665074",
+    "steamKoreanPatch": "1.0.3-steam-aa4"
+  }
+}

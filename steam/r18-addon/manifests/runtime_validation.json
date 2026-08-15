@@ -1,0 +1,29 @@
+{
+  "schema": "dies-irae-steam-r18-kr.runtime-validation.v2",
+  "validatedAt": "2026-08-16T05:51:34.7460205+09:00",
+  "executable": {
+    "path": "malie_fabula.exe",
+    "sha256": "6A5E7DDD3FC2BEE77539F09F82F3F89C4116D32AB7E3480CF7E7153A168CF818",
+    "windowTitle": "Dies irae ~Acta est Fabula~",
+    "fixtureSurvivedSeconds": 15,
+    "fixtureResult": "PASS"
+  },
+  "koreanPayload": {
+    "data5Sha256": "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C",
+    "data6Sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70",
+    "priorUserAcceptedDxAefDialogueNamesChoices": true
+  },
+  "liveSteam": {
+    "install": "PASS",
+    "installedHashVerifier": "PASS",
+    "userRuntimeConfirmation": "PASS",
+    "confirmedDate": "2026-08-16",
+    "steamAaFilesPreserved": true
+  },
+  "steamIntegration": {
+    "steamPlayButton": "Amantes amentes",
+    "r18Launcher": "separate malie_fabula.exe",
+    "steamApiDllPreserved": true
+  },
+  "valid": true
+}

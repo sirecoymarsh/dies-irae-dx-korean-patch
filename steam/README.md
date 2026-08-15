@@ -72,3 +72,10 @@ powershell.exe -ExecutionPolicy Bypass -File .\uninstall_ko_steam.ps1
 ## 무결성
 
 [`steam/release/SHA256SUMS.txt`](./release/SHA256SUMS.txt)와 [`steam/manifests`](./manifests)를 확인하십시오.
+<!-- R18_ADDON_START -->
+## Acta est Fabula R-18 애드온
+
+기존 Steam 한국어패치 설치 후 별도 [R-18 애드온](./r18-addon/README.md)을 적용할 수 있습니다. 공식 `dies_irae_r18_patch.zip`은 포함하지 않으며 사용자가 직접 보유해야 합니다.
+
+R-18판은 Steam 플레이 버튼이 아니라 동봉된 `2_R18_한국어_실행.cmd`로 실행합니다. 기존 `malie.exe`, Steam API 연동, 중국어 슬롯은 변경하지 않습니다.
+<!-- R18_ADDON_END -->

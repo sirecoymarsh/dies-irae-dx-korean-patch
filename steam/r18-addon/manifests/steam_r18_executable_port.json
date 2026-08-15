@@ -1,0 +1,121 @@
+{
+  "schema": "dies-irae-steam-r18-kr.executable-port.v1",
+  "source": {
+    "path": "malie_fabula.exe",
+    "size": 4203520,
+    "sha256": "7F8DD40212289F08F05EFE180B3C5138329980C82FE049ED7EBA57D5B1732CF1",
+    "imports": [
+      "advapi32.dll",
+      "comctl32.dll",
+      "d3d9.dll",
+      "dinput8.dll",
+      "dsound.dll",
+      "gdi32.dll",
+      "gdiplus.dll",
+      "imm32.dll",
+      "kernel32.dll",
+      "ole32.dll",
+      "shell32.dll",
+      "shlwapi.dll",
+      "user32.dll",
+      "version.dll",
+      "wininet.dll",
+      "winmm.dll",
+      "ws2_32.dll"
+    ]
+  },
+  "patched": {
+    "path": "malie_fabula.exe",
+    "size": 4203520,
+    "sha256": "6A5E7DDD3FC2BEE77539F09F82F3F89C4116D32AB7E3480CF7E7153A168CF818",
+    "patches": [
+      {
+        "name": "translation_csv_utf8_provider",
+        "offset": 2717184,
+        "beforeHex": "55 8B EC 56 57 68 4C DC 76 00 FF 75 08 E8 0E 14 00 00 8B F8 57 E8 16 00 00 00 57 8B F0 E8 BE 13 00 00 83 C4 10",
+        "afterHex": "55 8B EC 56 57 68 D8 59 72 00 FF 75 08 E8 0E 14 00 00 8B F8 57 E8 16 00 00 00 57 8B F0 E8 BE 13 00 00 83 C4 10"
+      },
+      {
+        "name": "dynamic_quick_label",
+        "offset": 3560792,
+        "beforeHex": "51 00 75 00 69 00 63 00 6B 00 2E 00 00 00 00 00",
+        "afterHex": "35 D0 2E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      {
+        "name": "dynamic_auto_label",
+        "offset": 3560808,
+        "beforeHex": "20 00 41 00 75 00 74 00 6F 00 2E 00 00 00 00 00",
+        "afterHex": "20 00 90 C7 D9 B3 2E 00 00 00 00 00 00 00 00 00"
+      }
+    ],
+    "checksum": {
+      "offset": 432,
+      "before": 4254119,
+      "after": 4239161,
+      "beforeHex": "A7 E9 40 00",
+      "afterHex": "39 AF 40 00"
+    },
+    "diffRanges": [
+      {
+        "start": 432,
+        "endExclusive": 434
+      },
+      {
+        "start": 2717190,
+        "endExclusive": 2717193
+      },
+      {
+        "start": 3560792,
+        "endExclusive": 3560795
+      },
+      {
+        "start": 3560796,
+        "endExclusive": 3560797
+      },
+      {
+        "start": 3560798,
+        "endExclusive": 3560799
+      },
+      {
+        "start": 3560800,
+        "endExclusive": 3560801
+      },
+      {
+        "start": 3560802,
+        "endExclusive": 3560803
+      },
+      {
+        "start": 3560810,
+        "endExclusive": 3560815
+      },
+      {
+        "start": 3560816,
+        "endExclusive": 3560817
+      },
+      {
+        "start": 3560818,
+        "endExclusive": 3560819
+      }
+    ],
+    "imports": [
+      "advapi32.dll",
+      "comctl32.dll",
+      "d3d9.dll",
+      "dinput8.dll",
+      "dsound.dll",
+      "gdi32.dll",
+      "gdiplus.dll",
+      "imm32.dll",
+      "kernel32.dll",
+      "ole32.dll",
+      "shell32.dll",
+      "shlwapi.dll",
+      "user32.dll",
+      "version.dll",
+      "wininet.dll",
+      "winmm.dll",
+      "ws2_32.dll"
+    ]
+  },
+  "valid": true
+}

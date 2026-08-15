@@ -1,0 +1,33 @@
+﻿{
+    "schema":  "dies-irae-steam-r18-kr.language-contract.v1",
+    "title":  "Dies irae ~Acta est Fabula~ R-18",
+    "target":  {
+                   "steamAppId":  "644540",
+                   "steamBuildId":  "21665074",
+                   "baseExecutable":  "malie.exe",
+                   "r18Executable":  "malie_fabula.exe"
+               },
+    "semanticSource":  {
+                           "edition":  "Dies irae DX package Acta est Fabula",
+                           "translationLocale":  "ko-KR",
+                           "audioLocale":  "ja-JP"
+                       },
+    "routing":  {
+                    "commonKoreanOverlay":  "data5.dat (required from Steam KR 1.0.3-steam-aa4)",
+                    "r18KoreanOverlay":  "data6.dat",
+                    "r18BaseArchive":  "data4.dat (extracted from exact official R-18 ZIP)",
+                    "textProvider":  "existing UTF8_I provider selected by target-native malie_fabula.exe patch"
+                },
+    "preserved":  {
+                      "steamAaExecutable":  "byte-identical",
+                      "steamApiDll":  "byte-identical",
+                      "steamAppIdFile":  "byte-identical",
+                      "chineseSlot":  "byte-identical",
+                      "japaneseAudio":  "preserved"
+                  },
+    "selectorContract":  {
+                             "amantes":  "existing English selector replacement remains Korean; Chinese selector remains Chinese",
+                             "acta":  "separate malie_fabula.exe launcher consumes common Korean plus Acta Korean overlay"
+                         },
+    "valid":  true
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "dies-irae-steam-r18-kr.lifecycle-validation.v1",
+  "testedAt": "2026-08-15T05:43:30+09:00",
+  "fixture": "isolated Steam KR 1.0.3-steam-aa4 fixture",
+  "gates": {
+    "normalInstall": "PASS",
+    "installedHashVerifier": "PASS",
+    "secondInstallRejected": "PASS",
+    "installedFileTamperDetected": "PASS",
+    "ordinaryUninstallExactRestore": "PASS",
+    "aaKoreanHashesPreserved": "PASS",
+    "wrongOfficialZipRejected": "PASS",
+    "wrongSteamBaselineRejected": "PASS",
+    "unknownMixedR18StateRejected": "PASS",
+    "preexistingOfficialExeBackedUp": "PASS",
+    "tamperedBackupRejected": "PASS",
+    "preexistingOfficialExeExactRestore": "PASS"
+  },
+  "liveSteamDirectoryModified": false,
+  "liveSteamInstall": "PASS",
+  "liveInstalledHashVerifier": "PASS",
+  "liveUserRuntimeConfirmation": "PASS",
+  "liveConfirmedDate": "2026-08-16",
+  "valid": true
+}
