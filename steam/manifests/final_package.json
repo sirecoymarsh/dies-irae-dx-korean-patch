@@ -1,0 +1,28 @@
+{
+    "schema":  "dies-irae-steam-kr.final-package.v1",
+    "version":  "1.0.3-steam-aa4",
+    "status":  "FINAL_RUNTIME_PASS",
+    "target":  {
+                   "steamAppId":  644540,
+                   "buildId":  21665074
+               },
+    "zip":  {
+                "name":  "Dies_irae_Steam_KR_1.0.3-steam-aa4_final_20260812.zip",
+                "size":  941348274,
+                "sha256":  "96B8F2218BBAF4E0EB7EC18D55C89C7AA833FEE2A62D1E0831FA9FAA5A37A149",
+                "entryCount":  22,
+                "archiveTest":  "PASS",
+                "treeExact":  true
+            },
+    "runtime":  {
+                    "scenarioKorean":  "PASS",
+                    "speakerNameKorean":  "PASS",
+                    "choiceTextKorean":  "PASS",
+                    "chinesePreserved":  "PASS"
+                },
+    "security":  {
+                     "scanner":  "Microsoft Defender",
+                     "result":  "NO_THREATS",
+                     "exitCode":  0
+                 }
+}

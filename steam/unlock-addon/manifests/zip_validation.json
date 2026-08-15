@@ -1,0 +1,12 @@
+{
+  "schema": "dies-irae-steam-r18-kr.zip-validation.v2",
+  "zip": "Dies_irae_Steam_KR_Unlock_Addon_1.0.0_20260816.zip",
+  "zipSha256": "B5E94F0F3B3BF8C16DBDD0A65696FB525A03EDAA326D56B8F280C3BE649986BA",
+  "crc": "PASS",
+  "entrySet": "PASS",
+  "manifestPayloads": "PASS",
+  "validatedPayloadCount": 17,
+  "defender": "PASS_NO_THREATS",
+  "liveSteamValidation": "PASS",
+  "valid": true
+}

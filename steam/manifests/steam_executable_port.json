@@ -1,0 +1,109 @@
+{
+  "schema": "dies-irae-steam-kr.executable-port.v1",
+  "source": {
+    "path": "malie.exe",
+    "size": 4389840,
+    "sha256": "CFDAA598422245A36B2333F1E923C8E808412D0360C86EF83D914ADF4D6EA926"
+  },
+  "steamless": {
+    "path": "Steamless.CLI.exe",
+    "sha256": "70CD54354865EDE605EC0FBFADF15F5302AA85A777394F28B0DE6ACFD243E795",
+    "arguments": [
+      "--quiet",
+      "--recalcchecksum"
+    ],
+    "unpackedExpectedSha256": "4812BEEF80FDEE9175C33CB6C3B31C1FC08A47467CD79686449A5B5E803D0374"
+  },
+  "patched": {
+    "inputUnpackedSha256": "4812BEEF80FDEE9175C33CB6C3B31C1FC08A47467CD79686449A5B5E803D0374",
+    "outputSha256": "FF105876B39458E54CA8C4C8E5231CE013FB2AC4D3554B8611BD98C85C88CC30",
+    "size": 4203520,
+    "patches": [
+      {
+        "name": "translation_csv_utf8_provider",
+        "offset": 2726574,
+        "beforeHex": "85 DB 74 07 68 B8 8F 72 00 EB 05 68 6C 10 77 00 57",
+        "afterHex": "85 DB 74 07 68 B8 8F 72 00 EB 05 68 B8 8F 72 00 57"
+      },
+      {
+        "name": "dynamic_quick_label",
+        "offset": 3573864,
+        "beforeHex": "51 00 75 00 69 00 63 00 6B 00 2E 00 00 00 00 00",
+        "afterHex": "35 D0 2E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      {
+        "name": "dynamic_auto_label",
+        "offset": 3573880,
+        "beforeHex": "20 00 41 00 75 00 74 00 6F 00 2E 00 00 00 00 00",
+        "afterHex": "20 00 90 C7 D9 B3 2E 00 00 00 00 00 00 00 00 00"
+      }
+    ],
+    "checksum": {
+      "offset": 432,
+      "value": 4252806
+    },
+    "diffRanges": [
+      {
+        "start": 432,
+        "endExclusive": 435
+      },
+      {
+        "start": 2726586,
+        "endExclusive": 2726589
+      },
+      {
+        "start": 3573864,
+        "endExclusive": 3573867
+      },
+      {
+        "start": 3573868,
+        "endExclusive": 3573869
+      },
+      {
+        "start": 3573870,
+        "endExclusive": 3573871
+      },
+      {
+        "start": 3573872,
+        "endExclusive": 3573873
+      },
+      {
+        "start": 3573874,
+        "endExclusive": 3573875
+      },
+      {
+        "start": 3573882,
+        "endExclusive": 3573887
+      },
+      {
+        "start": 3573888,
+        "endExclusive": 3573889
+      },
+      {
+        "start": 3573890,
+        "endExclusive": 3573891
+      }
+    ],
+    "imports": [
+      "advapi32.dll",
+      "comctl32.dll",
+      "d3d9.dll",
+      "dinput8.dll",
+      "dsound.dll",
+      "gdi32.dll",
+      "gdiplus.dll",
+      "imm32.dll",
+      "kernel32.dll",
+      "ole32.dll",
+      "shell32.dll",
+      "shlwapi.dll",
+      "steam_api.dll",
+      "user32.dll",
+      "version.dll",
+      "wininet.dll",
+      "winmm.dll",
+      "ws2_32.dll"
+    ]
+  },
+  "valid": true
+}

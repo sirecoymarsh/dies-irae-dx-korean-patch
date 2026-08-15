@@ -1,0 +1,16 @@
+{
+  "schema": "dies-irae-steam-r18-kr.distribution.v2",
+  "file": "Dies_irae_Steam_KR_Unlock_Addon_1.0.0_20260816.zip",
+  "size": 205502150,
+  "sha256": "B5E94F0F3B3BF8C16DBDD0A65696FB525A03EDAA326D56B8F280C3BE649986BA",
+  "entryCount": 18,
+  "version": "1.0.0-steam-unlock-addon",
+  "liveSteamValidation": "PASS",
+  "requiresOfficialZip": true,
+  "officialZipIncluded": false,
+  "target": {
+    "steamAppId": "644540",
+    "buildId": "21665074",
+    "steamKoreanPatch": "1.0.3-steam-aa4"
+  }
+}

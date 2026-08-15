@@ -1,0 +1,95 @@
+{
+  "schema": "dies-irae-steam-r18-kr.release-manifest.v2",
+  "version": "1.0.0-steam-unlock-addon",
+  "status": "final-live-install-verify-user-runtime-pass",
+  "finalizedAt": "2026-08-16T06:22:04.925379+09:00",
+  "officialR18ZipIncluded": false,
+  "liveSteamValidation": "PASS",
+  "files": [
+    {
+      "path": "1_개방_한국어_설치.cmd",
+      "size": 144,
+      "sha256": "FB8392FF6883C510123716FEB7979460CC13E74B4DD86C94EEA7DACE5376CB21"
+    },
+    {
+      "path": "2_개방_한국어_실행.cmd",
+      "size": 143,
+      "sha256": "6CCDAC9CF4060DDC8F2E6B3D5CBFAC5CE5F7CBF2F2CB39A8AAB36B6B2CE1BEBB"
+    },
+    {
+      "path": "3_개방_설치_검증.cmd",
+      "size": 127,
+      "sha256": "B378E8D8CFB21F1C4D282604E75FFC8859AF455ECECFE63A435326D61D9FB901"
+    },
+    {
+      "path": "4_개방_한국어_제거.cmd",
+      "size": 130,
+      "sha256": "0BF52CF7343F70F16536927BD3923E41E1E848D7A79881AB1EFC8A5A48EBE9E6"
+    },
+    {
+      "path": "DiesIraeSteamR18Addon.Common.psm1",
+      "size": 14125,
+      "sha256": "3EC027DCFF0FAF87A6FFC17C0C3A347EB922A03935B5CFF81F4575B19E1BE222"
+    },
+    {
+      "path": "evidence/steam_unlock_title_runtime.png",
+      "size": 872139,
+      "sha256": "78CFB16E5911ED8697243E97BA1CAC14CF04E959C9A1DD494AFF6AEC98D08BD2"
+    },
+    {
+      "path": "files/data6.dat",
+      "size": 210499584,
+      "sha256": "81DEC650BACB7D570D7352208DBB73EAD5D513B31A9C5D8AAE355A2150680E70"
+    },
+    {
+      "path": "install_r18_ko_steam.ps1",
+      "size": 8152,
+      "sha256": "A218168CA0E97C77653FECFCB04AF6128B4924E1ED0BA61016E87158917A7A4C"
+    },
+    {
+      "path": "launch_r18_ko_steam.ps1",
+      "size": 675,
+      "sha256": "C97872D6813C5F18A330DC6B6D8595C86382EA6AD7368410F047069E45BA50BD"
+    },
+    {
+      "path": "manifests/addon_contract.json",
+      "size": 1734,
+      "sha256": "A329FCE86513AB42E627C016A50307DDD5FCA4B69709DE71A3A4DC71477A61D1"
+    },
+    {
+      "path": "manifests/language_contract.json",
+      "size": 1658,
+      "sha256": "5191A638694E1A7E79CB92058A37D876F04271969EFE48FE1193BE0EE0AF39CD"
+    },
+    {
+      "path": "manifests/lifecycle_validation.json",
+      "size": 901,
+      "sha256": "114139A95C42922570AF2B6B952A4D064A41711BFCC8BD47E64B1ED872FE9276"
+    },
+    {
+      "path": "manifests/runtime_validation.json",
+      "size": 1009,
+      "sha256": "616B1FD3A233190AE3E2A8D72CF0DE6F898E503BB8F3A12D786F90442A319C49"
+    },
+    {
+      "path": "manifests/steam_r18_executable_port.json",
+      "size": 3003,
+      "sha256": "20D93D4CAA0B1A45C130A7C2A6E4819AABA9CB0088E8E7EBDDD0EE8AC6AE25F1"
+    },
+    {
+      "path": "README_KO.md",
+      "size": 2098,
+      "sha256": "457F8D25A036DB738E4ED57FD5BBED9F6D482F4530E81CA4D1EB81775EF89AEA"
+    },
+    {
+      "path": "uninstall_r18_ko_steam.ps1",
+      "size": 5105,
+      "sha256": "34D9AC308F09D3C6CE7F2F7CE8E322B82EDAFC4AC743CA6A78BBBD5357FB1200"
+    },
+    {
+      "path": "verify_r18_ko_steam.ps1",
+      "size": 2640,
+      "sha256": "14A04C0E06F850A6157CFB0D87F8DD2C04228D42500A3EB1E771C5F5AD1A7463"
+    }
+  ]
+}

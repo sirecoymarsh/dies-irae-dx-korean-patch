@@ -1,0 +1,40 @@
+{
+    "schema":  "dies-irae-steam-kr.data3-entry-patch.v1",
+    "status":  "PASS",
+    "input":  {
+                  "size":  84934656,
+                  "sha256":  "582E3A2DE4DFA9AFE0FE6550FE735F817433E49A9E551E6EA97D3DB68F8F7269"
+              },
+    "output":  {
+                   "size":  79604736,
+                   "sha256":  "0DEA33565F85BB2B3321A0B8FA34B57E066DDE3DBEA739D2E5EB3474D00A6968"
+               },
+    "layout":  {
+                   "index_count":  7525,
+                   "file_count":  4681,
+                   "data_start":  260096,
+                   "file_sequence_preserved":  true,
+                   "physical_payload_order_preserved":  true,
+                   "unchanged_payload_count":  4679
+               },
+    "changes":  [
+                    {
+                        "path":  "data\\system\\exec.dat",
+                        "sequence":  4656,
+                        "node_index":  7493,
+                        "original_size":  15452166,
+                        "original_sha256":  "1887ACB482A0793460E972A78B0501AE16C69298ECAE1D72DF8DF51F9B021A1E",
+                        "patched_size":  10123024,
+                        "patched_sha256":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003"
+                    },
+                    {
+                        "path":  "data\\system\\translation.csv",
+                        "sequence":  4663,
+                        "node_index":  7501,
+                        "original_size":  2113,
+                        "original_sha256":  "FF28809CFB9B0D0572EF865B6F3C2A3B1396C2A2DD5EA44FBF03D8E164D2E466",
+                        "patched_size":  2858,
+                        "patched_sha256":  "FE760AA382DA0C599E119AF1441E0739C90A87083D554D88386131C8BC706B16"
+                    }
+                ]
+}

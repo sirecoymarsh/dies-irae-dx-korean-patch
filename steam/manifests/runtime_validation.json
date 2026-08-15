@@ -1,0 +1,27 @@
+{
+    "schema":  "dies-irae-steam-kr.live-runtime-validation.v2",
+    "status":  "PASS",
+    "releaseVersion":  "1.0.3-steam-aa4",
+    "validatedAt":  "2026-08-12T18:17:44.3867473+09:00",
+    "executable":  {
+                       "pid":  9608,
+                       "sha256":  "FF105876B39458E54CA8C4C8E5231CE013FB2AC4D3554B8611BD98C85C88CC30"
+                   },
+    "installedHashes":  {
+                            "data3":  "0DEA33565F85BB2B3321A0B8FA34B57E066DDE3DBEA739D2E5EB3474D00A6968",
+                            "data4":  "8945DC46FF25983174C31A501CFE1D3874CEDF4E02E13C670F772E0532C8A7FE",
+                            "data5":  "B91EBA7FF3702274A5A396EA86FAAEC92CB675936D6F6D59E3A355F4D0F78C8C"
+                        },
+    "runtimeGates":  {
+                         "koreanScenario":  "PASS",
+                         "koreanSpeakerName":  "PASS — 카스미",
+                         "koreanChoiceText":  "PASS — user-verified screenshot",
+                         "chineseSlotPreserved":  "PASS — prior runtime and byte-preservation"
+                     },
+    "evidence":  [
+                     "evidence/runtime_english_slot_korean_body.png",
+                     "evidence/runtime_speaker_name_korean_user_verified.png",
+                     "evidence/runtime_choice_text_korean_user_verified.png",
+                     "evidence/runtime_chinese_slot_preserved.png"
+                 ]
+}

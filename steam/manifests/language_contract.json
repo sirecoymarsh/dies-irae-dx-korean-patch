@@ -1,0 +1,43 @@
+{
+    "schema":  "dies-irae-steam-kr.language-contract.v2",
+    "target":  {
+                   "steamAppId":  644540,
+                   "buildId":  21665074,
+                   "edition":  "Amantes amentes"
+               },
+    "semanticSourceLanguage":  "en-US",
+    "replacementSlot":  {
+                            "selector":  "English",
+                            "newContent":  "ko-KR",
+                            "runtimeSources":  [
+                                                   {
+                                                       "archive":  "data3.dat",
+                                                       "virtualPath":  "data/system/exec.dat",
+                                                       "sha256":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003"
+                                                   },
+                                                   {
+                                                       "archive":  "data4.cn.dat",
+                                                       "virtualPath":  "data/system/patch.en.dat",
+                                                       "sha256":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003"
+                                                   },
+                                                   {
+                                                       "archive":  "data5.dat",
+                                                       "virtualPath":  "data/system/exec.dat",
+                                                       "sha256":  "6284DCA98E02C7B91CAC1706D8A8951EAC10B7259ABBBD166EBCEB4269430003"
+                                                   }
+                                               ]
+                        },
+    "preservedLanguages":  [
+                               {
+                                   "selector":  "Chinese",
+                                   "content":  "zh-CN",
+                                   "archive":  "data4.cn.dat",
+                                   "virtualPath":  "data/system/patch.cn.dat",
+                                   "sha256":  "F8DB4D85A15A71244C8F3555D061C4441471EAB04D7C66486E42EC628775D6B0",
+                                   "mustRemainSelectable":  true
+                               }
+                           ],
+    "audioLanguage":  "ja-JP",
+    "textPolicy":  "English selector becomes Korean for scenario, speaker names, and choices; Chinese remains unchanged",
+    "approvedBy":  "user"
+}
